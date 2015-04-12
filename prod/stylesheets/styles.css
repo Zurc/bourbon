@@ -1,0 +1,187 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -.6em;
+  padding: .6em 0; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    header .logo:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      header .logo {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle; }
+        header .logo:last-child {
+          margin-right: 0; } }
+  header .social {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding: .2em; }
+    header .social:last-child {
+      margin-right: 0; }
+    header .social img {
+      border-radius: 50%;
+      float: right;
+      margin-left: .4em; }
+    @media screen and (max-width: 480px) {
+      header .social {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%;
+        text-align: center; }
+        header .social:last-child {
+          margin-right: 0; }
+        header .social img {
+          float: none; } }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #cdcdcd;
+  text-align: center; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  nav:last-child {
+    margin-right: 0; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      display: inline-block;
+      background: #333;
+      padding: 0.5em;
+      margin: 0.3em; }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none; }
+  @media screen and (max-width: 480px) {
+    nav {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      nav:last-child {
+        margin-right: 0; }
+      nav ul li {
+        display: block; } }
+
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  background-color: #e6e6e6;
+  padding: .6em; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-top: 0.5em; }
+      .wrapper:last-child {
+        margin-right: 0; } }
+  .wrapper section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    background-color: #bcbcbc;
+    padding: .3em; }
+    .wrapper section:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .wrapper section {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .wrapper section:last-child {
+          margin-right: 0; } }
+  .wrapper aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0;
+    background-color: #bcbcbc;
+    padding: .3em; }
+    .wrapper aside:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .wrapper aside {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .wrapper aside:last-child {
+          margin-right: 0; } }
+
+footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 0.3em; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  footer:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    footer {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      text-align: center; }
+      footer:last-child {
+        margin-right: 0; } }
+
+h1 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 22.652px; }
+
+/*# sourceMappingURL=styles.css.map */

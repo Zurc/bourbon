@@ -1,0 +1,116 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$mobile: new-breakpoint(max-width 480px 4);
+
+body {
+  @include outer-container;
+}
+
+header {
+  @include outer-container;
+  margin-bottom: -.6em;
+  padding: .6em 0;
+  .logo {
+    @include span-columns(6);
+    @include media($mobile) {
+      @include span-columns(4);
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+  .social {
+    @include span-columns(6);
+    padding: .2em;
+    img {
+      border-radius: 50%;
+      float: right;
+      margin-left: .4em;
+    }
+    @include media($mobile) {
+      @include span-columns(4);
+      text-align: center;
+      img {
+        float: none;
+      }
+    }
+  }
+}
+
+nav {
+  @include clearfix;
+  //@include outer-container;
+  @include span-columns(12);
+  background-color: #cdcdcd;
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      background: #333;
+      padding: 0.5em;
+      margin: 0.3em;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  @include media($mobile) {
+    @include span-columns(4);
+    ul {
+      li {
+        display: block;
+        a {
+
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  @include outer-container;
+  margin-top: 3em;
+  background-color: #e6e6e6;
+  padding: .6em;
+  @include media($mobile) {
+    @include span-columns(4);
+    margin-top: 0.5em;
+  }
+  section {
+    @include span-columns(9);
+    background-color: #bcbcbc;
+    padding: .3em;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+  aside {
+    @include span-columns(3);
+    @include omega();
+    background-color: #bcbcbc;
+    padding: .3em;
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+  }
+
+}
+
+footer {
+  @include outer-container;
+  @include span-columns(12);
+  padding: 0.3em;
+  @include media($mobile) {
+    @include span-columns(4);
+    text-align: center;
+  }
+}
+
+h1 {
+  font-family: $helvetica;
+  font-size: golden-ratio(14px,  1);
+}
